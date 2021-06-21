@@ -1,1 +1,495 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Baloo Tamma 2', cursive;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.todo{
+    height: 550px;
+}
+
+
+.navbar{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+    .izquierda-derecha{
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
+        padding: 1% 3%;
+        .izquierda{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            width: 30%;
+
+            .divLogo{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                img{
+                    width: 90%;
+                    margin-left: 0%;
+                }  
+            }
+             
+        } 
+        
+        .derecha{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 80%;
+            margin-right: 2%;
+           
+
+            #menu{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 100%;
+
+                
+                ul{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    width: 100%;
+                    padding: 0; 
+                    
+               
+                    
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        margin-left: .5%;
+                        margin-right: .5%;
+                        padding: 1%;
+                        cursor: pointer;
+
+                        a{
+                            font-size: 15px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: gray;
+
+                        }
+
+                        &.selected,&:hover{
+                           border-bottom: 2px solid #DA7777;
+                            a{
+                                color: #DA7777;
+                            }
+                           
+                        }
+
+                    }
+                }
+            }
+             
+        } 
+     
+    }
+
+
+     .primero #menu{
+   margin-left: 2%;
+}
+
+.primero  #menu ul{
+    position:fixed;
+    list-style: none;
+    width: 100%;
+    height: 25%;
+    background-color: #38b1dc;
+    top: 100px;
+    left: -100%;
+    z-index: 1;
+    transition: all .5s ease;
+    
+}
+
+.primero  #menu li{
+    display: block;
+}
+
+.primero #menu li a{
+    color: white;
+    margin-bottom: 5%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+
+
+ .primero .social1{
+    display: none;
+}
+.primero .social2{
+    display: none;
+}
+
+.checkbtn{
+   font-size: 30px;
+   color: #38b1dc;
+   display: none;
+}
+
+#check{
+   display: none;
+}
+#check:checked ~ ul{
+   left: 0;
+}
+    
+}
+
+.home{
+   background-color: white;
+ //background: linear-gradient(#FEE5C3, #FFF2E1);
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+ height:800px ;
+ .textos{
+     border-left: 4px solid #DA7777;
+     width: 30%;
+     padding-left: 2%;
+     margin-bottom: 2%;
+     h2{
+         color: #DA7777;
+        font-size: 45px;
+     }  
+
+     p{
+         color: gray;
+         text-align: justify;
+     }
+ }
+}
+
+.historia{
+    background-image: url(assets/img/familia4.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5% 10%;
+
+    .titulo{
+        border-left: 4px solid #DA7777;
+        h2{
+            color: #DA7777;
+            margin-left: 2%;
+            margin-bottom: 5%;
+        }
+    }
+
+    .texto{
+        width: 35%;
+        padding: 2%;
+        background-color: white;
+        border-radius: 10px;
+        color: gray;
+    }
+
+}
+
+.parte1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    padding: 10% 0%;
+    .texto{
+        width: 40%;
+        margin-left: -10%;
+
+        h2{
+            width: 70%;
+            color: #DA7777;
+            border-left: 4px solid #DA7777;
+            padding-left: 2%;
+        }
+        p{
+            width: 70%;
+            text-align: justify;
+            color: gray;
+            padding-left: 2%;
+        }
+    }
+    .imagenes{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            width: 70%;
+            margin-left: 4%;
+
+        &.masgrande{
+            width: 80%;
+        }    
+        }
+    }
+}
+.prioridad{
+    height: auto;
+    background-color: #DA7777;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+
+    h2{
+        width: 50%;
+        font-size: 50px;
+        color: white;
+        margin-top: 2%;
+    }
+    .botones{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .divBoton{
+            width: 50%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .boton{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid white;
+                padding: 3% 3%;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: ease all 0.5s; 
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: white;
+  
+    
+                }  
+            }
+            :hover{
+                background-color: white;
+                transition: ease all 0.5s; 
+    
+                p{
+                   color: #DA7777;
+                }
+            } 
+        }
+    }
+}
+
+.parte2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 5% 0%;
+    .texto{
+        width: 50%;
+
+        h2{
+            font-size: 35px;
+            text-align: center;
+            color: gray;
+        }
+    }
+    .imagenes{
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 20%;
+            margin-left: 4%;
+
+        &.masgrande{
+            width: 25%;
+        }    
+        }
+    }
+}
+
+.form{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .datos{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        input,select{
+            border-radius: 5px;
+            height: 40px;
+            width: 50%;
+            margin-top: 2%;
+            outline: none;
+            border: 1px solid #DA7777;
+            padding: 1% 5%;
+        }
+    }
+}
+
+.cuadros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+.cuadro{
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("assets/img/familia2.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+
+      
+}  
+
+
+
+.cuadro2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #DA7777;
+    padding: 5%;
+
+    h2{
+        color: white;
+        text-align: left;
+        margin-bottom: 10%;
+        font-size: 30px;
+    }
+    input,select{
+        height: 40px;
+        width: 50%;
+        margin-top: 2%;
+        outline: none;
+        border: none;
+        border: 2px solid #DA7777;
+        padding: 1% 5%;
+        border-radius: 5px;
+    }
+
+    select{
+        height: 55px;
+        width: 60%;
+    }
+}  
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 2%;
+
+.primeraParte{
+    width: 33%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+            .social{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 100%;
+               fa-icon{
+                color: white;
+                font-size: 40px;
+               }
+
+               p{
+                   margin-left: 2%;
+                   font-size: 17px;
+                   color: white;
+               }
+                
+            }
+            
+
+}
+
+
+.segundaParte{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    p{
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+  
+}
+
+.terceraParte{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    img{
+        width: 50%;
+    } 
+}
+
+}    
+

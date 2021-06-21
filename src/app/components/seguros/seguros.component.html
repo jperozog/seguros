@@ -1,0 +1,67 @@
+<div class="navbar">
+    <div class="izquierda-derecha">
+        <div class="izquierda">
+            <div class="divLogo">
+            </div>
+
+        </div>
+        <div class="derecha">
+            <div id="menu">
+                <input type="checkbox" id="check">
+
+                <label for="check" class="checkbtn">
+                    <fa-icon [icon]="faBars"></fa-icon>
+                </label>
+                <ul>
+                    <li><a routerLink="/">Inicio</a></li>
+                    <li><a routerLink="/AboutUs">Sobre Nosotros</a></li>
+                    <li class="selected"><a routerLink="/Seguros">Seguros</a></li>
+                    <li><a routerLink="/contacto">Cotizar</a></li>
+                    <li><a routerLink="/registro">Encuentra un Agente</a></li>
+                    <li><a routerLink="/">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="seguros" class="seguros">
+    <div class="vida">
+        <h3>Vida</h3>
+    </div>
+
+    <div class="salud">
+        <h3>Salud</h3>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="primeraParte">
+        <div class="social">
+            <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
+            <p>3424 Midcourt Rd, Suite 122
+                Carrollton, TX 75006</p>
+        </div>
+        <div class="social">
+            <fa-icon [icon]="faPhone"></fa-icon>
+            <p>USA: (833) 968-5433</p>
+        </div>
+    </div>
+    <div class="segundaParte">
+        <p>
+            ¡Siéntete seguro en todo momento!</p>
+    </div>
+    <div class="terceraParte">
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Instagram2.png">
+        </div>
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Twitter2.png">
+        </div>
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Whatsapp.png">
+        </div>
+    </div>
+
+</div>
