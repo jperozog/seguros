@@ -1,0 +1,91 @@
+<div class="navbar">
+    <div class="izquierda-derecha">
+        <div class="izquierda">
+            <div class="divLogo">
+            </div>
+
+        </div>
+        <div class="derecha">
+            <div id="menu">
+                <input type="checkbox" id="check">
+
+                <label for="check" class="checkbtn">
+                    <fa-icon [icon]="faBars"></fa-icon>
+                </label>
+                <ul>
+                    <li><a routerLink="/">Inicio</a></li>
+                    <li><a routerLink="/AboutUs">Sobre Nosotros</a></li>
+                    <li><a routerLink="/Seguros">Seguros</a></li>
+                    <li><a routerLink="/contacto">Cotizar</a></li>
+                    <li class="selected"><a routerLink="/Agentes">Encuentra un Agente</a></li>
+                    <li><a routerLink="/WorkUs">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home">
+    <div class="textos">
+        <h2>¡Comunicate con un Agente!</h2>
+        <p>Contamos con agentes altamente capacitados para asegurarnos de que obtendrás una asesoría personalizada y
+            hecha a la medida.</p>
+            <br>
+        <p>Nuestros agentes valorarán tu situación y objetivos actuales. Además te acompañarán en todo el proceso.</p>
+    </div>
+    <div class="imagen2">
+        <img src="assets/img/agente3.jpg" alt="">
+    </div>
+
+</div>
+
+<div class="cuadros">
+    <div class="cuadro3 segundo ">
+        <h2>¡Nos comunicaremos contigo!</h2>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Telefono">
+        <input type="text" placeholder="Email">
+        <select name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Tipo de Seguro</option>
+            <option value="value3">Value 3</option>
+        </select>
+
+        <select name="select">
+            <option value="value1">Value 1</option>
+            <option value="value2" selected>Preferencia de Contacto</option>
+            <option value="value3">Value 3</option>
+        </select>
+    </div>
+
+</div>
+
+
+<div class="footer">
+    <div class="primeraParte">
+        <div class="social">
+            <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
+            <p>3424 Midcourt Rd, Suite 122
+                Carrollton, TX 75006</p>
+        </div>
+        <div class="social">
+            <fa-icon [icon]="faPhone"></fa-icon>
+            <p>USA: (833) 968-5433</p>
+        </div>
+    </div>
+    <div class="segundaParte">
+        <p>
+            ¡Siéntete seguro en todo momento!</p>
+    </div>
+    <div class="terceraParte">
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Instagram2.png">
+        </div>
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Twitter2.png">
+        </div>
+        <div class="social">
+            <img class="img-responsive" src="assets/img/Whatsapp.png">
+        </div>
+    </div>
+
+</div>
