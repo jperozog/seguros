@@ -9,6 +9,12 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SegurosComponent } from './components/seguros/seguros.component';
 import { AgentesComponent } from './components/agentes/agentes.component';
 import { WorkUsComponent } from './components/work-us/work-us.component';
+import { BeneficiosComponent } from './components/beneficios/beneficios.component';
+import { VidaTerminoComponent } from './components/vida-termino/vida-termino.component';
+import { VidaPermanenteComponent } from './components/vida-permanente/vida-permanente.component';
+import { IndexadoComponent } from './components/indexado/indexado.component';
+import { PrearregloComponent } from './components/prearreglo/prearreglo.component';
+import { CotizarComponent } from './components/cotizar/cotizar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,13 @@ import { WorkUsComponent } from './components/work-us/work-us.component';
     AboutUsComponent,
     SegurosComponent,
     AgentesComponent,
-    WorkUsComponent
+    WorkUsComponent,
+    BeneficiosComponent,
+    VidaTerminoComponent,
+    VidaPermanenteComponent,
+    IndexadoComponent,
+    PrearregloComponent,
+    CotizarComponent
   ],
   imports: [
     BrowserModule,
