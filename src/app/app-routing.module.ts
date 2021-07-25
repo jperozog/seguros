@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'WorkUs', component: WorkUsComponent },
   { path: 'Beneficios', component: BeneficiosComponent },
   { path: 'SeguroVidaTermino', component: VidaTerminoComponent },
-  { path: 'SeguroVidaPermanente', component: VidaPermanenteComponent },
+  { path: 'ObamaCare', component: VidaPermanenteComponent },
   { path: 'SeguroVidaIndexado', component: IndexadoComponent },
   { path: 'Prearreglo', component: PrearregloComponent },
   { path: 'Cotizar', component: CotizarComponent }

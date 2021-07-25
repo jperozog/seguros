@@ -82,25 +82,26 @@
                         extenderla..</p>
 
                     <div class="divBoton">
-                        <div  routerLink="/SeguroVidaTermino" class="boton">
+                        <div routerLink="/SeguroVidaTermino" class="boton">
                             <p>Ver Mas</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="cuadroIzquierda cuadro3">
-                    <h4>Seguro de vida permanente</h4>
-                    <p>El seguro de vida permanente le permite acumular ahorros con el tiempo.</p>
+                    <h4>ObamaCare</h4>
+                    <p>Obamacare es el nombre por el que se conoce La Ley de Cuidados de Salud a Bajo Costo (Affordable
+                        Care Act). Es una
+                        Reforma de la Salud, destinada a hacer el seguro médico más accesible y asequible para todos.
+                    </p>
                     <br>
-                    <p>Seguro de vida permanente
-                        El seguro de vida permanente le permite acumular ahorros con el tiempo.
-
-                        Usted puede retirar, invertir o usarlo para pedir un préstamo contra estos ahorros. También
-                        puede usarlo para pagar primas de seguro.
+                    <p>Cuando decimos asequible nos referimos a que el Obamacare da subsidios de salud a individuos y
+                        familias, basados ​​en la edad, el tamaño del hogar y los ingresos. El seguro cubre numerosos
+                        tratamientos y situaciones de salud que antes no se contemplaban.
                     </p>
 
                     <div class="divBoton">
-                        <div  routerLink="/SeguroVidaPermanente"  class="boton">
+                        <div routerLink="/ObamaCare" class="boton">
                             <p>Ver Mas</p>
                         </div>
                     </div>
@@ -122,8 +123,7 @@
                 <div class="cuadroIzquierda cuadro5">
                     <h4>Preareglo funerario</h4>
                     <p>Paga por los gastos del funeral. Una ventaja de este seguro es que fija los costos del funeral a
-                        precios Los seguros de gastos funerarios pueden ser costosos en comparación a otros tipos de
-                        seguros de vida.
+                        precios tan accesibles como otros tipos de seguros de vida.
 
                     </p>
                     <br>
@@ -131,7 +131,7 @@
                         cuando usted fallece.
                     </p>
 
-                    <div   class="divBoton">
+                    <div class="divBoton">
                         <div routerLink="/Prearreglo" class="boton">
                             <p>Ver Mas</p>
                         </div>
@@ -165,7 +165,7 @@
                     lesión, o pagar directamente al proveedor médico.</p>
 
                 <div class="divBoton">
-                    <div class="boton">
+                    <div routerLink="/Cotizar" class="boton">
                         <p>Cotizar</p>
                     </div>
                 </div>
@@ -186,7 +186,7 @@
                     gastos médicos que su plan de seguro de salud no cubre además de ayudar a llenar el vacío de los
                     deducibles de cobertura médica, copagos y gastos de bolsillo.</p>
                 <div class="divBoton">
-                    <div class="boton">
+                    <div routerLink="/Cotizar" class="boton">
                         <p>Cotizar</p>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                 <p>Al igual que otros planes complementarios, el seguro de enfermedad crítica puede ayudar a llenar los
                     vacíos en la cobertura de su seguro de salud en caso de una enfermedad crítica inesperada. </p>
                 <div class="divBoton">
-                    <div class="boton">
+                    <div routerLink="/Cotizar" class="boton">
                         <p>Cotizar</p>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
             <h3>Polizas Complementarias</h3>
             <div class="cuadros">
                 <div class="cuadroIzquierda cuadro1">
-                    <h4>Ataques al corazón y derrame cerebral</h4>
+                    <h4>Plan de descuento</h4>
                     <div class="divBoton">
                         <div class="boton">
                             <p>Ver Mas</p>
@@ -223,8 +223,8 @@
                 </div>
 
                 <div class="cuadroDerecha cuadro2">
-                    <h4>Cancer </h4>
-                   
+                    <h4>Vision Dental </h4>
+
 
                     <div class="divBoton">
                         <div class="boton">
@@ -234,8 +234,8 @@
                 </div>
 
                 <div class="cuadroIzquierda cuadro3">
-                    <h4>Accidentes Personales</h4>
-                
+                    <h4>Medicamentos</h4>
+
 
                     <div class="divBoton">
                         <div class="boton">
@@ -244,29 +244,27 @@
                     </div>
                 </div>
 
-            
+
 
             </div>
         </div>
     </div>
 </div>
 
-
 <div class="footer">
     <div class="primeraParte">
-        <div class="social">
-            <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
-            <p>3424 Midcourt Rd, Suite 122
-                Carrollton, TX 75006</p>
-        </div>
-        <div class="social">
-            <fa-icon [icon]="faPhone"></fa-icon>
-            <p>USA: (833) 968-5433</p>
-        </div>
+        <ul>
+            <li><a routerLink="/">Inicio</a></li>
+            <li class="selected"><a routerLink="/AboutUs">Sobre Nosotros</a></li>
+            <li><a routerLink="/Seguros">Seguros</a></li>
+            <li><a routerLink="/Cotizar">Cotizar</a></li>
+            <li><a routerLink="/Agentes">Encuentra un Agente</a></li>
+            <li><a routerLink="/WorkUs">Trabaja con Nosotros</a></li>
+        </ul>
     </div>
     <div class="segundaParte">
         <p>
-            ¡Siéntete seguro en todo momento!</p>
+           Todos los derechos reservados</p>
     </div>
     <div class="terceraParte">
         <div class="social">

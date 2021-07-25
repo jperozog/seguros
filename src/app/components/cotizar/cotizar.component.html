@@ -42,36 +42,41 @@
         <input type="text" placeholder="Email">
         <textarea placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
         <select name="select">
-            <option value="value1">Value 1</option>
-            <option value="value2" selected>Tipo de Seguro</option>
-            <option value="value3">Value 3</option>
+            <option value="" selected>Seleccionar Servicio</option>
+            <option value="vida">Seguro de Vida</option>
+            <option value="salud" >Seguro de Salud</option>
+            <option value="termino">Seguro de Vida a Termino</option>
+            <option value="obamacare" >ObamaCare</option>
+            <option value="indexado">Seguro de Vida a Indexado</option>
+            <option value="funerario">Prearreglo Funerario</option>
         </select>
 
         <select name="select">
-            <option value="value1">Value 1</option>
-            <option value="value2" selected>Preferencia de Contacto</option>
-            <option value="value3">Value 3</option>
+            <option value="" selected>Preferencia de contacto</option>
+            <option value="Telefono">Telefono</option>
+            <option value="Whatsapp" >Whatsapp</option>
+            <option value="Correo">Correo</option>
         </select>
+
+        
     </div>
 
 </div>
 
-
 <div class="footer">
     <div class="primeraParte">
-        <div class="social">
-            <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
-            <p>3424 Midcourt Rd, Suite 122
-                Carrollton, TX 75006</p>
-        </div>
-        <div class="social">
-            <fa-icon [icon]="faPhone"></fa-icon>
-            <p>USA: (833) 968-5433</p>
-        </div>
+        <ul>
+            <li><a routerLink="/">Inicio</a></li>
+            <li class="selected"><a routerLink="/AboutUs">Sobre Nosotros</a></li>
+            <li><a routerLink="/Seguros">Seguros</a></li>
+            <li><a routerLink="/Cotizar">Cotizar</a></li>
+            <li><a routerLink="/Agentes">Encuentra un Agente</a></li>
+            <li><a routerLink="/WorkUs">Trabaja con Nosotros</a></li>
+        </ul>
     </div>
     <div class="segundaParte">
         <p>
-            ¡Siéntete seguro en todo momento!</p>
+           Todos los derechos reservados</p>
     </div>
     <div class="terceraParte">
         <div class="social">
